@@ -92,3 +92,15 @@ Uma vez no terminal do simulador (`usuario@simulador:~$ `), você pode utilizar 
 ## Resultados Esperados e Conclusão
 
 A execução e validação do simulador demonstraram, na prática, como o conceito de hierarquia de diretórios se sustenta através de referências encadeadas em memória. Mais importante, o mecanismo de *Journaling* comprovou sua utilidade: ao fechar o programa e abri-lo novamente, o processo de leitura do arquivo de log demonstrou como os Sistemas Operacionais modernos garantem a tolerância a falhas e a resiliência dos dados após reinicializações não planejadas. Este desenvolvimento proporcionou uma visão consolidada sobre o funcionamento interno das chamadas de sistema, a manipulação de estruturas em árvore e a importância do registro prévio de transações em disco.
+
+*1. Criação de Arquivos e Diretórios*
+Aqui testamos os comandos touch e mkdir para montar a estrutura inicial.
+![Print da criação de arquivos](./assets/Photo1.jpeg)
+
+*2. Movimentação e Listagem*
+Teste dos comandos mv e ls, demonstrando que a árvore de diretórios é atualizada corretamente em memória.
+![Print da listagem](./assets/Photo2.jpeg)
+
+*3. Validação do Journaling (Replay)*
+Após forçar o encerramento do simulador, o comando log demonstra que as operações foram gravadas no disco e o estado foi recuperado com sucesso.
+![Print do Journaling](./assets/Photo3.jpeg)

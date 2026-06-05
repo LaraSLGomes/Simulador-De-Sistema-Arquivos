@@ -1,0 +1,5 @@
+CRIAR_DIRETORIO|/sistema
+CRIAR_DIRETORIO|/sistema/documentos
+CRIAR_ARQUIVO|/sistema/documentos/trabalho.txt|conteudo do meu trabalho de SO
+COPIAR|/sistema/documentos/trabalho.txt|/sistema/documentos/backup.txt
+RENOMEAR|/sistema/documentos/backup.txt|copia_trabalho.txt
